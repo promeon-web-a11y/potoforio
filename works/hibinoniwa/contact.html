@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アクセス・お問い合わせ｜喫茶と焼き菓子 日々ノ庭</title>
+<meta name="description" content="日々ノ庭へのアクセスとお問い合わせフォーム。（架空店舗の制作デモ）">
+<!-- 架空店舗を想定したWeb制作デモです。検索エンジンに実在店舗として登録されないよう noindex を指定しています。 -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2f4a3a">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<p class="demo-bar"><strong>DEMO</strong>このサイトは架空の店舗を想定したWeb制作デモです。店名・営業時間・メニュー等はすべて仮設定で、実在の店舗ではありません。 <a class="demo-back" href="../../index.html">← Promeon Web ポートフォリオへ戻る</a></p>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="" width="34" height="34">
+      <span class="logo-text"><span class="logo-sub">喫茶と焼き菓子</span><span class="logo-main">日々ノ庭</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く"><span></span></button>
+    <nav class="global-nav" id="global-nav" aria-label="サイト内メニュー">
+      <ul>
+        <li><a href="index.html" data-nav="index">ホーム</a></li>
+        <li><a href="about.html" data-nav="about">お店のこと</a></li>
+        <li><a href="menu.html" data-nav="menu">メニュー</a></li>
+        <li><a href="guide.html" data-nav="guide">ご利用案内</a></li>
+        <li><a href="contact.html" data-nav="contact" aria-current="page">アクセス・お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">ホーム</a> ／ アクセス・お問い合わせ</p>
+    <p class="en">Access &amp; Contact</p>
+    <h1>アクセス・お問い合わせ</h1>
+    <p class="lead">お店の場所と、お問い合わせの方法をご案内します。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-layout">
+    <div>
+      <h2 class="menu-cat"><img src="img/access.svg" alt="">アクセス</h2>
+      <div class="map-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2f4a3a" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <b>地図準備中</b>
+        <small>住所確定後にGoogleマップを掲載します。<br>※デモサイトのため、実在の地点は表示していません。</small>
+      </div>
+      <table class="info-table">
+        <tr><th scope="row">所在地</th><td>北海道札幌市内<br><small class="price-pending">詳細住所は確認中</small></td></tr>
+        <tr><th scope="row">最寄り駅</th><td><span class="tag gray">確認中</span></td></tr>
+        <tr><th scope="row">駐車場</th><td><span class="tag gray">確認中</span></td></tr>
+      </table>
+
+      <div class="hours-card" style="margin-top:20px">
+        <h3>営業時間</h3>
+        <table class="hours-table">
+          <tr data-day="2,3,4,5,6"><th scope="row">火曜〜土曜</th><td>11:00〜17:00</td></tr>
+          <tr data-day="0,1"><th scope="row">日曜・月曜</th><td class="closed">定休日</td></tr>
+        </table>
+        <span class="today-badge" data-today-status hidden></span>
+      </div>
+    </div>
+
+    <div class="form-card" id="form">
+      <h2>お問い合わせ</h2>
+      <p>焼き菓子の取り置きなど、確認が必要なことはこちらからお送りください。</p>
+
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">お名前 <span class="req">必須</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+          <p class="error" id="name-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="email">メールアドレス <span class="req">必須</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+          <p class="error" id="email-error" role="alert"></p>
+        </div>
+        <fieldset class="field">
+          <legend>お問い合わせの種類 <span class="opt">任意</span></legend>
+          <div class="radio-group">
+            <label><input type="radio" name="type" value="焼き菓子・取り置き"><span>焼き菓子・取り置き</span></label>
+            <label><input type="radio" name="type" value="来店について"><span>来店について</span></label>
+            <label><input type="radio" name="type" value="その他"><span>その他</span></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="message">お問い合わせ内容 <span class="req">必須</span></label>
+          <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+          <p class="error" id="message-error" role="alert"></p>
+        </div>
+        <div class="privacy-box">
+          ご入力いただいた情報は、お問い合わせへの回答のために使用します。<br>
+          ※プライバシーポリシーは公開前に内容を確認のうえ掲載します。
+        </div>
+        <button class="btn btn-primary form-submit" type="submit">送信する</button>
+        <p class="img-note">※デモサイトのため、実際には送信されません。</p>
+      </form>
+
+      <div class="thanks" id="form-thanks" role="status">
+        <img src="img/thanks.svg" alt="">
+        <h3>お問い合わせありがとうございます。</h3>
+        <p>内容を確認後、店舗からご連絡します。</p>
+        <p class="img-note">※デモサイトのため、実際には送信されていません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">日々ノ庭</p>
+        <p>喫茶と焼き菓子<br>北海道札幌市内（架空設定）</p>
+      </div>
+      <div>
+        <h2>営業時間</h2>
+        <p>火〜土 11:00〜17:00<br>定休日：日曜・月曜<br><small>※デモ用の仮設定です</small></p>
+      </div>
+      <div>
+        <h2>サイトマップ</h2>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">お店のこと</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="guide.html">ご利用案内</a></li>
+          <li><a href="contact.html">アクセス・お問い合わせ</a></li>
+          <li>
+            <span class="sns-link" title="アカウントURLは未設定です">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              Instagram（URL設定後にリンク）
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-demo">
+      【制作デモについて】本サイトは、Webサイト制作のポートフォリオ用に作成した架空店舗のデモサイトです。実在する店舗・企業・人物とは関係ありません。掲載している店名、営業時間、メニュー、所在地などはすべて仮の設定です。イラストはイメージで、実際の商品・店内を表すものではありません。お問い合わせフォームは送信されません。
+    </p>
+    <p class="copyright"><small>&copy; 日々ノ庭（架空店舗デモ）</small></p>
+  </div>
+</footer>
+
+<nav class="quick-bar" aria-label="よく見られる情報">
+  <a href="menu.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 9h12v4a6 6 0 0 1-12 0z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M9 6c-1-1 1-2 0-3M13 6c-1-1 1-2 0-3"/></svg>
+    メニュー
+  </a>
+  <a href="guide.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    営業時間・案内
+  </a>
+  <a href="contact.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    アクセス
+  </a>
+</nav>
+
+<a class="pf-back" href="../../index.html" aria-label="Promeon Web ポートフォリオへ戻る" title="ポートフォリオへ戻る"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg><span>一覧へ</span></a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>客室・設備｜民宿 凪の間</title>
+<meta name="description" content="客室ごとの広さ・定員・寝具・設備、浴室・洗面所・共用部のご案内。（架空の宿泊施設を想定した制作デモ）">
+<!-- 架空の宿泊施設を想定したWeb制作デモです。実在施設として検索されないよう noindex を指定しています。 -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#3b706d">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<p class="demo-bar"><strong>DEMO</strong>架空の宿泊施設を想定した制作デモです。施設名・客室・設備・所在地などはすべて仮設定で、実在の施設ではありません。予約もできません。 <a class="demo-back" href="../../index.html">← Promeon Web ポートフォリオへ戻る</a></p>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="" width="36" height="36">
+      <span class="logo-text"><span class="logo-sub">民宿</span><span class="logo-main">凪の間</span></span>
+    </a>
+    <nav class="global-nav" id="global-nav" aria-label="サイト内メニュー">
+      <ul>
+        <li><a href="index.html" data-nav="index">ホーム</a></li>
+        <li><a href="about.html" data-nav="about">宿について</a></li>
+        <li><a href="rooms.html" data-nav="rooms" aria-current="page">客室・設備</a></li>
+        <li><a href="guide.html" data-nav="guide">ご滞在案内</a></li>
+        <li><a href="access.html" data-nav="access">アクセス・お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-reserve header-reserve" href="#" data-reserve>空室確認・予約 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">ホーム</a> ／ 客室・設備</p>
+    <p class="en">Rooms</p>
+    <h1>客室・設備</h1>
+    <p class="lead">客室は5室です。客室ごとの広さ・定員・寝具・設備と、浴室・洗面所・共用部の様子をご確認いただけます。</p>
+    <div class="btn-row" style="margin-top:22px">
+      <a class="btn btn-reserve" href="#" data-reserve>予約サイトで空室を確認 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:0">
+  <div class="container">
+    <div class="notice">
+      <p><strong>掲載している写真について</strong><br>客室の写真は、実際の客室を片付け後に撮影し、広く見える加工をせずに掲載します。写真と設備の情報は客室ごとに一致させています。<br><small>※このデモでは、写真を掲載する位置を「写真準備中」の枠で示しています。客室の情報は確認後に掲載します。</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-title">
+      <span class="en">Room List</span>
+      <h2>客室のご案内</h2>
+      <p>客室を選ぶと、写真と設備の詳細が表示されます。</p>
+    </div>
+    <div class="room-tabs" role="tablist" aria-label="客室を選ぶ">
+      <button type="button" role="tab" id="tab-room1" aria-controls="room1" aria-selected="true">客室1</button>
+      <button type="button" role="tab" id="tab-room2" aria-controls="room2" aria-selected="false">客室2</button>
+      <button type="button" role="tab" id="tab-room3" aria-controls="room3" aria-selected="false">客室3</button>
+      <button type="button" role="tab" id="tab-room4" aria-controls="room4" aria-selected="false">客室4</button>
+      <button type="button" role="tab" id="tab-room5" aria-controls="room5" aria-selected="false">客室5</button>
+    </div>
+    <div class="room-panel" id="room1" role="tabpanel" aria-labelledby="tab-room1" tabindex="0">
+      <div class="room-head">
+        <h3>客室1</h3>
+        <span class="badge badge-pending">客室タイプ確認中</span>
+      </div>
+      <div class="room-main">
+        <div class="room-gallery">
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>写真準備中（客室1・全景）</b><small>広角加工をせず、実際の広さが分かるように撮影します</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 2</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 3</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>窓・眺め</small></div>
+        </div>
+        <dl class="spec">
+          <div><dt>広さ</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>定員</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>寝具</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">ベッド・布団の別、数</small></dd></div>
+          <div><dt>室内設備</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">照明・空調・収納・コンセント・テーブルなど</small></dd></div>
+          <div><dt>浴室・トイレ</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">客室内か共用か</small></dd></div>
+          <div><dt>アメニティ</dt><dd><a href="#amenity">共通のアメニティを見る</a></dd></div>
+        </dl>
+      </div>
+      <p class="detail-title">客室の細部 <span class="badge badge-pending">撮影予定</span> <small class="pending-text" style="font-weight:400">実際に設置されているものだけ掲載します</small></p>
+      <div class="detail-grid">
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>寝具</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>枕元</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>照明</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>窓・カーテン</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>収納</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>コンセント</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>空調操作部</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>テーブル</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>室内備品</b></div>
+      </div>
+    </div>
+    <div class="room-panel" id="room2" role="tabpanel" aria-labelledby="tab-room2" tabindex="0">
+      <div class="room-head">
+        <h3>客室2</h3>
+        <span class="badge badge-pending">客室タイプ確認中</span>
+      </div>
+      <div class="room-main">
+        <div class="room-gallery">
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>写真準備中（客室2・全景）</b><small>広角加工をせず、実際の広さが分かるように撮影します</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 2</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 3</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>窓・眺め</small></div>
+        </div>
+        <dl class="spec">
+          <div><dt>広さ</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>定員</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>寝具</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">ベッド・布団の別、数</small></dd></div>
+          <div><dt>室内設備</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">照明・空調・収納・コンセント・テーブルなど</small></dd></div>
+          <div><dt>浴室・トイレ</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">客室内か共用か</small></dd></div>
+          <div><dt>アメニティ</dt><dd><a href="#amenity">共通のアメニティを見る</a></dd></div>
+        </dl>
+      </div>
+      <p class="detail-title">客室の細部 <span class="badge badge-pending">撮影予定</span> <small class="pending-text" style="font-weight:400">実際に設置されているものだけ掲載します</small></p>
+      <div class="detail-grid">
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>寝具</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>枕元</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>照明</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>窓・カーテン</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>収納</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>コンセント</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>空調操作部</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>テーブル</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>室内備品</b></div>
+      </div>
+    </div>
+    <div class="room-panel" id="room3" role="tabpanel" aria-labelledby="tab-room3" tabindex="0">
+      <div class="room-head">
+        <h3>客室3</h3>
+        <span class="badge badge-pending">客室タイプ確認中</span>
+      </div>
+      <div class="room-main">
+        <div class="room-gallery">
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>写真準備中（客室3・全景）</b><small>広角加工をせず、実際の広さが分かるように撮影します</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 2</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 3</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>窓・眺め</small></div>
+        </div>
+        <dl class="spec">
+          <div><dt>広さ</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>定員</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>寝具</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">ベッド・布団の別、数</small></dd></div>
+          <div><dt>室内設備</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">照明・空調・収納・コンセント・テーブルなど</small></dd></div>
+          <div><dt>浴室・トイレ</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">客室内か共用か</small></dd></div>
+          <div><dt>アメニティ</dt><dd><a href="#amenity">共通のアメニティを見る</a></dd></div>
+        </dl>
+      </div>
+      <p class="detail-title">客室の細部 <span class="badge badge-pending">撮影予定</span> <small class="pending-text" style="font-weight:400">実際に設置されているものだけ掲載します</small></p>
+      <div class="detail-grid">
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>寝具</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>枕元</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>照明</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>窓・カーテン</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>収納</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>コンセント</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>空調操作部</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>テーブル</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>室内備品</b></div>
+      </div>
+    </div>
+    <div class="room-panel" id="room4" role="tabpanel" aria-labelledby="tab-room4" tabindex="0">
+      <div class="room-head">
+        <h3>客室4</h3>
+        <span class="badge badge-pending">客室タイプ確認中</span>
+      </div>
+      <div class="room-main">
+        <div class="room-gallery">
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>写真準備中（客室4・全景）</b><small>広角加工をせず、実際の広さが分かるように撮影します</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 2</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 3</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>窓・眺め</small></div>
+        </div>
+        <dl class="spec">
+          <div><dt>広さ</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>定員</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>寝具</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">ベッド・布団の別、数</small></dd></div>
+          <div><dt>室内設備</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">照明・空調・収納・コンセント・テーブルなど</small></dd></div>
+          <div><dt>浴室・トイレ</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">客室内か共用か</small></dd></div>
+          <div><dt>アメニティ</dt><dd><a href="#amenity">共通のアメニティを見る</a></dd></div>
+        </dl>
+      </div>
+      <p class="detail-title">客室の細部 <span class="badge badge-pending">撮影予定</span> <small class="pending-text" style="font-weight:400">実際に設置されているものだけ掲載します</small></p>
+      <div class="detail-grid">
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>寝具</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>枕元</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>照明</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>窓・カーテン</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>収納</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>コンセント</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>空調操作部</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>テーブル</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>室内備品</b></div>
+      </div>
+    </div>
+    <div class="room-panel" id="room5" role="tabpanel" aria-labelledby="tab-room5" tabindex="0">
+      <div class="room-head">
+        <h3>客室5</h3>
+        <span class="badge badge-pending">客室タイプ確認中</span>
+      </div>
+      <div class="room-main">
+        <div class="room-gallery">
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>写真準備中（客室5・全景）</b><small>広角加工をせず、実際の広さが分かるように撮影します</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 2</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>全景 3</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>窓・眺め</small></div>
+        </div>
+        <dl class="spec">
+          <div><dt>広さ</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>定員</dt><dd><span class="badge badge-pending">確認中</span></dd></div>
+          <div><dt>寝具</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">ベッド・布団の別、数</small></dd></div>
+          <div><dt>室内設備</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">照明・空調・収納・コンセント・テーブルなど</small></dd></div>
+          <div><dt>浴室・トイレ</dt><dd><span class="badge badge-pending">確認中</span><br><small class="pending-text">客室内か共用か</small></dd></div>
+          <div><dt>アメニティ</dt><dd><a href="#amenity">共通のアメニティを見る</a></dd></div>
+        </dl>
+      </div>
+      <p class="detail-title">客室の細部 <span class="badge badge-pending">撮影予定</span> <small class="pending-text" style="font-weight:400">実際に設置されているものだけ掲載します</small></p>
+      <div class="detail-grid">
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>寝具</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>枕元</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>照明</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>窓・カーテン</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>収納</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>コンセント</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>空調操作部</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>テーブル</b></div>
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>室内備品</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-kinari">
+  <div class="container">
+    <div class="sec-title fade-in">
+      <span class="en">Compare</span>
+      <h2>客室の比較</h2>
+      <p>客室ごとの違いを一覧で比べられます。</p>
+    </div>
+    <p class="scroll-hint">← 表は横にスクロールできます →</p>
+    <div class="table-scroll fade-in">
+      <table class="compare">
+        <thead>
+          <tr><th scope="col">客室</th><th scope="col">広さ</th><th scope="col">定員</th><th scope="col">寝具</th><th scope="col">浴室・トイレ</th><th scope="col">主な設備</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row"><a href="#room1" data-room-link>客室1</a></th><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td></tr>
+          <tr><th scope="row"><a href="#room2" data-room-link>客室2</a></th><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td></tr>
+          <tr><th scope="row"><a href="#room3" data-room-link>客室3</a></th><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td></tr>
+          <tr><th scope="row"><a href="#room4" data-room-link>客室4</a></th><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td></tr>
+          <tr><th scope="row"><a href="#room5" data-room-link>客室5</a></th><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td><td class="pending-text">確認中</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="6">全5室・最大宿泊人数12名（デモ用の仮設定）</td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-title fade-in">
+      <span class="en">Bath &amp; Washroom</span>
+      <h2>浴室・洗面所・トイレ</h2>
+      <p>設備の内容と使い方は、確認後に掲載します。</p>
+    </div>
+    <div class="facility-grid">
+      <div class="facility fade-in">
+        <div class="pair">
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>浴室 1</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>浴室 2</small></div>
+        </div>
+        <h3>浴室 <span class="badge badge-pending">確認中</span></h3>
+        <p>利用できる時間・使い方は確認後に掲載します。</p>
+      </div>
+      <div class="facility fade-in">
+        <div class="pair">
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>洗面所 1</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>洗面所 2</small></div>
+        </div>
+        <h3>洗面所 <span class="badge badge-pending">確認中</span></h3>
+        <p>設置されている備品は確認後に掲載します。</p>
+      </div>
+      <div class="facility fade-in">
+        <div class="pair">
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>トイレ 1</small></div>
+          <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><small>トイレ 2</small></div>
+        </div>
+        <h3>トイレ <span class="badge badge-pending">確認中</span></h3>
+        <p>客室内か共用かは、客室ごとに確認後に掲載します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-kinari">
+  <div class="container">
+    <div class="sec-title fade-in">
+      <span class="en">Common Space</span>
+      <h2>共用部・お食事</h2>
+    </div>
+    <div class="facility-grid">
+      <div class="facility fade-in">
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>写真準備中</b><small>共用スペース</small></div>
+        <h3>共用スペース <span class="badge badge-pending">確認中</span></h3>
+        <p>利用できる時間・設備は確認後に掲載します。</p>
+      </div>
+      <div class="facility fade-in">
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>写真準備中</b><small>食事場所</small></div>
+        <h3>朝食 <span class="badge badge-pending">確認中</span></h3>
+        <p>朝食の提供の有無・内容は確認後に掲載します。食事条件は予約サイトでもご確認ください。</p>
+      </div>
+      <div class="facility fade-in" id="amenity" style="scroll-margin-top:90px">
+        <div class="photo-slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>写真準備中</b><small>タオル・アメニティ</small></div>
+        <h3>アメニティ <span class="badge badge-pending">確認中</span></h3>
+        <p>ご用意しているアメニティは確認後に掲載します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="reserve-box fade-in">
+      <div>
+        <h2>空室確認・ご予約</h2>
+        <p>料金・食事条件・キャンセル条件は、予約サイトの施設ページでご確認ください。</p>
+      </div>
+      <div>
+        <a class="btn btn-reserve" href="#" data-reserve>予約サイトで空室を確認 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        <p class="reserve-note">外部の予約サイトへ移動します</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">凪の間</p>
+        <p>民宿・客室5室<br>北海道小樽市近郊（架空設定）<br>チェックイン 15:00〜18:00／チェックアウト 10:00<br><small>※デモ用の仮設定です</small></p>
+      </div>
+      <div>
+        <h2>MENU</h2>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">宿について</a></li>
+          <li><a href="rooms.html">客室・設備</a></li>
+          <li><a href="guide.html">ご滞在案内・よくある質問</a></li>
+          <li><a href="access.html">アクセス・お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>RESERVATION</h2>
+        <p>ご予約・空室確認は、外部の予約サイトで承ります。</p>
+        <a class="btn btn-reserve" href="#" data-reserve>空室確認・予約 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        <ul style="margin-top:14px">
+          <li><a href="access.html#form">宿へのお問い合わせ</a></li>
+          <li>Instagram（アカウント設定後にリンク）</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-demo">
+      【制作デモについて】本サイトは、Webサイト制作のポートフォリオ用に作成した「架空の宿泊施設を想定したデモ」です。実在する施設・人物とは関係ありません。施設名、所在地、客室数、チェックイン時間などはすべて仮の設定です。「空室確認・予約」ボタンから実際の予約サイトには移動しません。イラストはイメージです。フォームは送信されません。
+    </p>
+    <p class="copyright"><small>&copy; 民宿 凪の間（架空施設デモ）</small></p>
+  </div>
+</footer>
+
+<nav class="quick-bar" aria-label="予約・お問い合わせ">
+  <a class="q-reserve" href="#" data-reserve>空室確認・予約<small>外部の予約サイトへ</small></a>
+  <a class="q-contact" href="access.html#form">お問い合わせ<small>宿へのご質問</small></a>
+</nav>
+
+<dialog class="reserve-dialog" id="reserve-dialog" aria-labelledby="reserve-dialog-title">
+  <div class="inner">
+    <h2 id="reserve-dialog-title">外部の予約サイトへ移動します</h2>
+    <p>実際のサイトでは、このボタンから契約中の予約サイトの施設ページへ移動し、空室確認・予約・お支払いを予約サイト上で行います。</p>
+    <p><strong>このサイトは架空の宿泊施設のデモのため、予約サイトへのリンクは設定していません。</strong></p>
+    <form method="dialog"><button class="btn btn-reserve" type="submit">閉じる</button></form>
+  </div>
+</dialog>
+<p id="reserve-fallback" class="notice" tabindex="-1" hidden style="position:fixed;left:16px;right:16px;bottom:80px;z-index:70;background:#fff">デモサイトのため、予約サイトへのリンクは設定していません。</p>
+
+<a class="pf-back" href="../../index.html" aria-label="Promeon Web ポートフォリオへ戻る" title="ポートフォリオへ戻る"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg><span>一覧へ</span></a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

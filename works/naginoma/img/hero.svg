@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 640" preserveAspectRatio="xMidYMid slice" role="img" aria-label="海辺の木造の宿のイラスト">
+<rect width="1600" height="640" fill="#eef3f1"/>
+<rect y="0" width="1600" height="330" fill="#f5f1e8"/>
+<circle cx="1260" cy="150" r="54" fill="#f1e2cf"/>
+<path d="M0 300c180-30 340-50 520-30s300 40 460 20 380-60 620-30v70H0z" fill="#dfe8e5"/>
+<rect y="330" width="1600" height="310" fill="#cfe0dc"/>
+<g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".7"><path d="M120 400h120M360 430h90M620 395h140M980 440h110M1280 410h150M200 500h80M800 520h120M1100 560h90"/></g>
+<path d="M0 520c260-30 520-20 760 10s520 30 840-10v120H0z" fill="#e9dccb"/>
+<g transform="translate(900 300)">
+<path d="M0 220V110L150 30l150 80v110z" fill="#c49a70"/>
+<path d="M-24 118 150 22l174 96" fill="none" stroke="#5b4a3a" stroke-width="16" stroke-linejoin="round"/>
+<g fill="#f5f1e8"><rect x="40" y="130" width="60" height="44" rx="2"/><rect x="200" y="130" width="60" height="44" rx="2"/></g>
+<g stroke="#a87b52" stroke-width="3"><path d="M70 130v44M40 152h60M230 130v44M200 152h60"/></g>
+<rect x="128" y="140" width="44" height="80" fill="#5b4a3a"/>
+<g stroke="#a87b52" stroke-width="2" opacity=".6"><path d="M0 190h128M172 190h128M0 205h128M172 205h128"/></g>
+</g>
+<g fill="#7fa39f"><path d="M780 520c0-60 20-110 30-110s30 50 30 110z"/><path d="M1260 520c0-70 22-120 34-120s34 50 34 120z"/><path d="M1320 520c0-50 16-86 24-86s24 36 24 86z" fill="#6b918d"/></g>
+</svg>

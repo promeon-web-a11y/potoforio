@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ご利用案内｜喫茶と焼き菓子 日々ノ庭</title>
+<meta name="description" content="営業時間、ご注文の流れ、よくある質問。（架空店舗の制作デモ）">
+<!-- 架空店舗を想定したWeb制作デモです。検索エンジンに実在店舗として登録されないよう noindex を指定しています。 -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2f4a3a">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<p class="demo-bar"><strong>DEMO</strong>このサイトは架空の店舗を想定したWeb制作デモです。店名・営業時間・メニュー等はすべて仮設定で、実在の店舗ではありません。 <a class="demo-back" href="../../index.html">← Promeon Web ポートフォリオへ戻る</a></p>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="" width="34" height="34">
+      <span class="logo-text"><span class="logo-sub">喫茶と焼き菓子</span><span class="logo-main">日々ノ庭</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く"><span></span></button>
+    <nav class="global-nav" id="global-nav" aria-label="サイト内メニュー">
+      <ul>
+        <li><a href="index.html" data-nav="index">ホーム</a></li>
+        <li><a href="about.html" data-nav="about">お店のこと</a></li>
+        <li><a href="menu.html" data-nav="menu">メニュー</a></li>
+        <li><a href="guide.html" data-nav="guide" aria-current="page">ご利用案内</a></li>
+        <li><a href="contact.html" data-nav="contact">アクセス・お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">ホーム</a> ／ ご利用案内</p>
+    <p class="en">Guide</p>
+    <h1>ご利用案内</h1>
+    <p class="lead">はじめての方に、来店前に知っておきたいことをまとめました。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title fade-in">
+      <span class="en">Hours</span>
+      <h2>営業日・営業時間</h2>
+    </div>
+    <div class="hours-card fade-in" style="max-width:560px;margin:0 auto">
+      <table class="hours-table">
+        <tr data-day="2,3,4,5,6"><th scope="row">火曜〜土曜</th><td>11:00〜17:00</td></tr>
+        <tr data-day="0"><th scope="row">日曜</th><td class="closed">定休日</td></tr>
+        <tr data-day="1"><th scope="row">月曜</th><td class="closed">定休日</td></tr>
+      </table>
+      <p style="text-align:center;margin:12px 0 0"><span class="today-badge" data-today-status hidden></span></p>
+      <p class="img-note">※デモ用の仮設定です。臨時休業はInstagramでお知らせする想定です。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-title fade-in">
+      <span class="en">Flow</span>
+      <h2>ご注文の流れ</h2>
+    </div>
+    <ol class="steps">
+      <li class="fade-in">
+        <h3>ご来店</h3>
+        <p>営業時間内にお越しください。席の予約については、下のよくある質問をご覧ください。</p>
+      </li>
+      <li class="fade-in">
+        <h3>ご注文</h3>
+        <p>メニューからドリンクと焼き菓子をお選びください。注文方法の詳細は確定後に掲載します。</p>
+      </li>
+      <li class="fade-in">
+        <h3>店内でゆっくり</h3>
+        <p>コーヒーと焼き菓子をお楽しみください。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:820px">
+    <div class="section-title fade-in">
+      <span class="en">Information</span>
+      <h2>ご利用について</h2>
+    </div>
+    <table class="info-table fade-in">
+      <tr><th scope="row">店内利用</th><td>ご利用いただけます。</td></tr>
+      <tr><th scope="row">テイクアウト</th><td><span class="tag gray">確認中</span><br>対応の可否・受付方法を確認後に掲載します。</td></tr>
+      <tr><th scope="row">予約・取り置き</th><td><span class="tag gray">確認中</span><br>確定するまでは、<a href="contact.html#form">お問い合わせフォーム</a>からご相談ください。</td></tr>
+      <tr><th scope="row">お支払い方法</th><td><span class="tag gray">確認中</span><br>ご利用いただける支払方法は、確認後に掲載します。</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-title fade-in">
+      <span class="en">FAQ</span>
+      <h2>よくある質問</h2>
+    </div>
+    <div class="faq fade-in">
+      <details>
+        <summary>営業時間と定休日を教えてください。</summary>
+        <div class="answer"><p>火曜〜土曜の11:00〜17:00に営業しています。日曜・月曜は定休日です。</p></div>
+      </details>
+      <details>
+        <summary>テイクアウトはできますか？</summary>
+        <div class="answer"><p>現在確認中です。決まり次第、このページとメニューページでお知らせします。</p></div>
+      </details>
+      <details>
+        <summary>どんな支払方法が使えますか？</summary>
+        <div class="answer"><p>現在確認中です。決まり次第、このページでお知らせします。</p></div>
+      </details>
+      <details>
+        <summary>席の予約はできますか？</summary>
+        <div class="answer"><p>現在確認中です。ご希望がある場合は、<a href="contact.html#form">お問い合わせフォーム</a>からご相談ください。</p></div>
+      </details>
+    </div>
+    <p class="img-note" style="margin-top:20px">※「確認中」の項目は、実案件では店舗さまに確認した内容を掲載します。</p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>ご不明な点はお気軽に</h2>
+    <p>焼き菓子の取り置きなど、確認が必要なことはフォームからどうぞ。</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="contact.html#form">お問い合わせ</a>
+      <a class="btn btn-outline" href="menu.html">メニューを見る</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">日々ノ庭</p>
+        <p>喫茶と焼き菓子<br>北海道札幌市内（架空設定）</p>
+      </div>
+      <div>
+        <h2>営業時間</h2>
+        <p>火〜土 11:00〜17:00<br>定休日：日曜・月曜<br><small>※デモ用の仮設定です</small></p>
+      </div>
+      <div>
+        <h2>サイトマップ</h2>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">お店のこと</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="guide.html">ご利用案内</a></li>
+          <li><a href="contact.html">アクセス・お問い合わせ</a></li>
+          <li>
+            <span class="sns-link" title="アカウントURLは未設定です">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              Instagram（URL設定後にリンク）
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-demo">
+      【制作デモについて】本サイトは、Webサイト制作のポートフォリオ用に作成した架空店舗のデモサイトです。実在する店舗・企業・人物とは関係ありません。掲載している店名、営業時間、メニュー、所在地などはすべて仮の設定です。イラストはイメージで、実際の商品・店内を表すものではありません。お問い合わせフォームは送信されません。
+    </p>
+    <p class="copyright"><small>&copy; 日々ノ庭（架空店舗デモ）</small></p>
+  </div>
+</footer>
+
+<nav class="quick-bar" aria-label="よく見られる情報">
+  <a href="menu.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 9h12v4a6 6 0 0 1-12 0z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M9 6c-1-1 1-2 0-3M13 6c-1-1 1-2 0-3"/></svg>
+    メニュー
+  </a>
+  <a href="guide.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    営業時間・案内
+  </a>
+  <a href="contact.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    アクセス
+  </a>
+</nav>
+
+<a class="pf-back" href="../../index.html" aria-label="Promeon Web ポートフォリオへ戻る" title="ポートフォリオへ戻る"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg><span>一覧へ</span></a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
