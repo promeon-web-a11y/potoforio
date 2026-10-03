@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アクセス・お問い合わせ｜菓子室 こもれび（架空店舗デモ）</title>
+<meta name="description" content="菓子室 こもれびへのアクセスとお問い合わせ（架空店舗を想定したWeb制作デモ）">
+<!-- 架空店舗を想定したWeb制作デモです。実在店舗として検索エンジンに登録されないよう noindex を指定しています。 -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#6b4630">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<p class="demo-bar"><strong>DEMO</strong>架空の焼き菓子店を想定した制作デモです。店名・商品・価格・営業時間はすべて仮設定で、実在の店舗ではありません。 <a href="../../index.html">← ポートフォリオへ戻る</a></p>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="" width="40" height="40">
+      <span class="logo-text"><span class="logo-sub">焼き菓子店</span><span class="logo-main">菓子室 こもれび</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く"><span class="bars" aria-hidden="true"></span><span class="nav-toggle-label" aria-hidden="true">メニュー</span></button>
+    <nav class="global-nav" id="global-nav" aria-label="サイト内メニュー">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">お店について</a></li>
+        <li><a href="menu.html">焼き菓子・価格</a></li>
+        <li><a href="guide.html">ご利用案内・FAQ</a></li>
+        <li><a href="access.html" aria-current="page">アクセス・お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head komorebi-bg">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="現在の位置"><ol><li><a href="index.html">ホーム</a></li><li aria-current="page">アクセス・お問い合わせ</li></ol></nav>
+    <p class="en" lang="en">Access &amp; Contact</p>
+    <h1>アクセス・お問い合わせ</h1>
+    <p class="lead">お店の場所と、お問い合わせの方法をご案内します。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-layout">
+    <div class="fade-in">
+      <h2 style="font-size:1.5rem;margin-top:0">アクセス</h2>
+      <div class="map-slot" role="img" aria-label="地図準備中">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <b>地図準備中</b>
+        <small>住所確定後に地図を掲載します。<br>※デモのため、実在の地点は表示していません。</small>
+      </div>
+      <div class="table-wrap">
+        <table class="info-table">
+          <tr><th scope="row">所在地</th><td>北海道札幌市内<span class="note">区名・番地は確認中です</span></td></tr>
+          <tr><th scope="row">最寄り駅・バス停</th><td><span class="badge badge-pending">確認中</span></td></tr>
+          <tr><th scope="row">駐車場</th><td><span class="badge badge-pending">確認中</span></td></tr>
+          <tr><th scope="row">電話番号</th><td><span class="badge badge-pending">未設定</span><span class="note">デモのため掲載していません</span></td></tr>
+        </table>
+      </div>
+      <div style="margin-top:24px">
+        <div class="hours-card">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>営業案内</h3>
+        <dl class="hours-list">
+          <dt>営業時間</dt><dd class="hours-big">10:30〜17:00</dd>
+          <dt>定休日</dt><dd>月曜・火曜</dd>
+        </dl>
+        <span class="today-badge" data-today-status hidden></span>
+        <p class="note">※営業時間・定休日はデモ用の仮設定です。</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="form-card fade-in" id="form">
+      <h2>お問い合わせ</h2>
+      <p>商品や来店について、確認したいことがあればお送りください。</p>
+      <div class="form-demo-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r=".6" fill="currentColor"/></svg>
+        <p style="margin:0"><strong>デモ用のフォームです。</strong>入力内容はどこにも送信されず、保存もされません。送信先は未設定です。</p>
+      </div>
+
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">お名前 <span class="req">必須</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+          <p class="error" id="name-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="email">メールアドレス <span class="req">必須</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+          <p class="error" id="email-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="tel">電話番号 <span class="opt">任意</span></label>
+          <input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" aria-describedby="tel-hint tel-error">
+          <p class="hint" id="tel-hint">お電話での連絡を希望される場合のみご入力ください。</p>
+          <p class="error" id="tel-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="message">お問い合わせ内容 <span class="req">必須</span></label>
+          <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+          <p class="error" id="message-error" aria-live="polite"></p>
+        </div>
+        <div class="privacy-box">
+          ご入力いただいた情報は、お問い合わせへの回答のために使用します。<br>
+          ※プライバシーポリシーは、公開前に内容を確認のうえ掲載します。
+        </div>
+        <button class="btn btn-primary form-submit" type="submit">内容を確認して送信（デモ）</button>
+        <p class="note" style="margin-top:10px">※デモのため、ボタンを押しても実際には送信されません。</p>
+      </form>
+
+      <div class="thanks" id="form-thanks" role="status">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>お問い合わせありがとうございます。</h3>
+        <p>内容を確認後、店舗からご連絡します。</p>
+        <p class="note">※デモサイトのため、実際には送信されていません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">菓子室 こもれび</p>
+        <p>焼き菓子店<br>北海道札幌市内（架空設定・番地は未設定）</p>
+      </div>
+      <div>
+        <h2>営業時間</h2>
+        <p>10:30〜17:00<br>定休日：月曜・火曜</p>
+        <p class="note">※デモ用の仮設定です</p>
+      </div>
+      <div>
+        <h2>サイトマップ</h2>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">お店について</a></li>
+          <li><a href="menu.html">焼き菓子・価格</a></li>
+          <li><a href="guide.html">ご利用案内・FAQ</a></li>
+          <li><a href="access.html">アクセス・お問い合わせ</a></li>
+          <li><span class="sns-pending"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram（URL設定後にリンク）</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-demo">【制作デモについて】本サイトは、Webサイト制作のポートフォリオ用に作成した架空の焼き菓子店のデモです。実在する店舗・人物とは関係ありません。店名、店主名、商品名、価格、営業時間、所在地はすべて仮の設定で、実際の販売価格ではありません。写真は未掲載で、「写真準備中」の枠は差し替え用です。ロゴはデモ用の仮デザインです。お問い合わせフォームはどこにも送信されません。</p>
+    <p class="copyright"><small>&copy; 菓子室 こもれび（架空店舗デモ）</small></p>
+  </div>
+</footer>
+
+<nav class="quick-bar" aria-label="よく見られる情報">
+  <a href="menu.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/><circle cx="10" cy="15" r="1" fill="currentColor"/><circle cx="15.5" cy="15" r="1" fill="currentColor"/></svg>焼き菓子</a>
+  <a href="guide.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>営業案内</a>
+  <a href="access.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>アクセス</a>
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>
