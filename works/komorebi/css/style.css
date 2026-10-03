@@ -669,3 +669,50 @@ a.product-card .more { margin-top: auto; padding-top: 8px; color: var(--brown); 
   .footer-grid { grid-template-columns: minmax(0, 1fr); }
   .value-list li { flex-direction: column; gap: 10px; }
 }
+
+/* ---------- 文字の折り返しを整える（2026-10 調整） ----------
+   日本語を文節の切れ目で改行し（対応ブラウザのみ）、見出し・ボタンは行の長さをそろえ、
+   本文は最終行が1〜2文字だけ残らないようにします。 */
+h1, h2, h3, h4, summary, label, legend, th, dt, figcaption, nav a, .btn, button, .badge, .req, .opt {
+  word-break: auto-phrase;
+  text-wrap: balance;
+}
+p, li, dd, td { text-wrap: pretty; }
+.req, .opt { white-space: nowrap; }
+
+/* ---------- ポートフォリオへ戻るボタン（制作デモ用） ---------- */
+.pf-back {
+  position: fixed; right: 20px; bottom: 20px; z-index: 80;
+  width: 64px; height: 64px; border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0;
+  background: #1d232b; color: #fff; text-decoration: none;
+  border: 2px solid #fff; box-shadow: 0 6px 18px rgba(0, 0, 0, .22);
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.2;
+  transition: transform .2s ease, background-color .2s ease;
+}
+.pf-back svg { width: 20px; height: 20px; }
+.pf-back span { font-size: 14px; font-weight: 700; letter-spacing: .04em; }
+.pf-back:hover { background: #1f5f6b; color: #fff; transform: translateY(-2px); }
+.pf-back:focus-visible { outline: 3px solid #1f5f6b; outline-offset: 3px; }
+@media (max-width: 820px) {
+  /* 画面下の固定バーと重ならない位置に */
+  .pf-back { right: 14px; bottom: calc(74px + env(safe-area-inset-bottom)); width: 56px; height: 56px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-back { transition: none; }
+  .pf-back:hover { transform: none; }
+}
+@media print { .pf-back { display: none; } }
+/* ポートフォリオへ戻る丸ボタン：本文と重ならない広い画面だけに表示（狭い画面は上部のデモ表記から戻れます） */
+@media (max-width: 1319px) { .pf-back { display: none; } }
+/* 短い案内文・ロゴの補足・カード見出しも文節で改行 */
+.lead, .hero-lead, .section-title p, .sec-title p, .page-head p, .logo-sub, .logo-text, .entry-card strong, .free-title, .hero-eyebrow, .work-body h3, .filter-title {
+  word-break: auto-phrase;
+}
+/* デモ表記・画像の注記・写真枠の説明も、行末に1〜2文字だけ残らないように */
+.demo-bar, .img-note, .photo-slot b, .photo-slot small, .map-slot small {
+  word-break: auto-phrase;
+  text-wrap: balance;
+}
+/* 入力欄の補足・注記も文節で改行 */
+.hint, .note, .field .hint, .privacy-box, .table-note, .form-note { word-break: auto-phrase; }
