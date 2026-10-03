@@ -40,9 +40,52 @@
         <p>制作サンプル</p>
       </div>
 
+      <div class="filter" id="work-filter" hidden>
+        <p class="filter-title" id="filter-title">気になる条件で絞り込む</p>
+        <div class="filter-row" role="group" aria-labelledby="filter-title">
+          <div class="filter-field">
+            <label for="filter-industry">業種・業態</label>
+            <select id="filter-industry" data-group="industry">
+              <option value="">すべて</option>
+              <option value="industry:food">飲食店・カフェ・菓子店</option>
+              <option value="industry:lodging">宿泊施設</option>
+              <option value="industry:housing">住宅・内装・リフォーム</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="filter-purpose">ホームページの目的</label>
+            <select id="filter-purpose" data-group="purpose">
+              <option value="">すべて</option>
+              <option value="purpose:visit">来店につなげたい</option>
+              <option value="purpose:booking">予約につなげたい</option>
+              <option value="purpose:recruit">採用・求人を強化したい</option>
+              <option value="purpose:inquiry">相談・見積もり依頼を受けたい</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="filter-feature">特徴・載せたいもの</label>
+            <select id="filter-feature" data-group="feature">
+              <option value="">すべて</option>
+              <option value="feature:photos">写真多め</option>
+              <option value="feature:beforeafter">施工前後の写真</option>
+              <option value="feature:menu">メニュー・価格表</option>
+              <option value="feature:hours">営業時間を目立たせる</option>
+              <option value="feature:compare">比較表</option>
+              <option value="feature:flow">流れの図解</option>
+              <option value="feature:apply">応募フォーム</option>
+              <option value="feature:external">外部予約サイトへの案内</option>
+              <option value="feature:sns">Instagram横スクロール</option>
+              <option value="feature:faq">よくある質問</option>
+            </select>
+          </div>
+          <button type="button" class="filter-reset" id="filter-reset" hidden>条件を解除</button>
+        </div>
+        <p class="filter-count" id="filter-count" aria-live="polite"></p>
+      </div>
+
       <div class="works-grid">
 
-        <a class="work-card" href="works/hibinoniwa/index.html">
+        <a class="work-card" href="works/hibinoniwa/index.html" data-tags="industry:food purpose:visit feature:menu feature:hours feature:faq">
           <div class="work-thumb">
             <img src="assets/thumbs/hibinoniwa.png" alt="喫茶と焼き菓子「日々ノ庭」デモサイトのトップページ" width="1280" height="800" loading="lazy">
             <span class="work-label">架空店舗デモ</span>
@@ -59,7 +102,7 @@
           </div>
         </a>
 
-        <a class="work-card" href="works/kitanoteshigoto/index.html">
+        <a class="work-card" href="works/kitanoteshigoto/index.html" data-tags="industry:housing purpose:recruit purpose:inquiry feature:apply feature:flow feature:faq">
           <div class="work-thumb">
             <img src="assets/thumbs/kitanoteshigoto.png" alt="北の手仕事舎デモサイトのトップページ" width="1280" height="800" loading="lazy">
             <span class="work-label">架空企業デモ</span>
@@ -76,7 +119,7 @@
           </div>
         </a>
 
-        <a class="work-card" href="works/naginoma/index.html">
+        <a class="work-card" href="works/naginoma/index.html" data-tags="industry:lodging purpose:booking feature:photos feature:compare feature:external feature:faq">
           <div class="work-thumb">
             <img src="assets/thumbs/naginoma.png" alt="民宿「凪の間」デモサイトのトップページ" width="1280" height="800" loading="lazy">
             <span class="work-label">架空施設デモ</span>
@@ -93,7 +136,7 @@
           </div>
         </a>
 
-        <a class="work-card" href="works/komorebi/index.html">
+        <a class="work-card" href="works/komorebi/index.html" data-tags="industry:food purpose:visit feature:photos feature:menu feature:hours feature:faq">
           <div class="work-thumb">
             <img src="assets/thumbs/komorebi.png" alt="焼き菓子店「菓子室 こもれび」デモサイトのトップページ" width="1280" height="800" loading="lazy">
             <span class="work-label">架空店舗デモ</span>
@@ -110,6 +153,25 @@
           </div>
         </a>
 
+        <a class="work-card" href="works/nakamurahekiso/index.html" data-tags="industry:housing purpose:inquiry feature:photos feature:beforeafter feature:flow feature:sns feature:faq">
+          <div class="work-thumb">
+            <img src="assets/thumbs/nakamurahekiso.png" alt="内装工事「なかむら壁装」デモサイトのトップページ" width="1280" height="800" loading="lazy">
+            <span class="work-label">架空事業者デモ</span>
+          </div>
+          <div class="work-body">
+            <ul class="tags">
+              <li>内装工事・壁紙</li>
+              <li>見積もり相談</li>
+              <li>5ページ</li>
+            </ul>
+            <h3>内装工事「なかむら壁装」</h3>
+            <p>札幌市近郊で、壁紙の張り替えを一人で請け負う内装工事業者を想定したデモサイト。「現地確認・見積もり無料」と「水回りは別途見積もり」を、無料になる範囲が誤解されないよう注記付きで目立たせました。工事の流れは図解で示し、施工前後の写真枠とInstagramの横スクロール表示も用意しています。</p>
+            <span class="work-link">サイトを見る →</span>
+          </div>
+        </a>
+
+        <p class="filter-empty" id="filter-empty" hidden>条件に合うサンプルはまだありません。条件を減らすか、<button type="button" class="link-button" data-filter-reset>すべて解除</button>してください。</p>
+
         <!--
           ▼ 新しいサンプルを追加するときは、上の <a class="work-card"> … </a> をまるごとコピーして、
             ここに貼り付け、次の部分を書き換えてください。
@@ -117,11 +179,13 @@
             ・img src       … サムネイル画像（例：assets/thumbs/sample-name.png ／ 1280×800 推奨）
             ・work-label    … 「架空店舗デモ」「制作実績」など
             ・tags / h3 / p … 業種・ページ数、サイト名、説明文
+            ・data-tags     … 絞り込み用の分類（例：industry:food purpose:visit feature:faq）。
+                              使える値は上の絞り込みプルダウンの option の value と同じです。新しい分類は option も追加してください
         -->
 
       </div>
 
-      <p class="note">※「架空店舗デモ」「架空企業デモ」「架空施設デモ」は、ポートフォリオ用に架空の店舗・会社を想定して制作したサンプルです。実在の店舗・企業の制作実績ではなく、掲載している求人も実際の募集ではありません。</p>
+      <p class="note">※「架空店舗デモ」「架空企業デモ」「架空施設デモ」「架空事業者デモ」は、ポートフォリオ用に架空の店舗・会社を想定して制作したサンプルです。実在の店舗・企業の制作実績ではなく、掲載している求人も実際の募集ではありません。</p>
     </div>
   </section>
 
@@ -161,5 +225,6 @@
   </div>
 </footer>
 
+<script src="assets/js/portfolio.js"></script>
 </body>
 </html>
